@@ -1063,16 +1063,60 @@ In conclusion, the hyperplane is a subspace that is one dimension lower than the
 #### Properties of SVM
 
 
+Support Vector Machines (SVMs) are a type of supervised learning algorithm that can be used for classification or regression tasks. Here are some of the key properties of SVMs:
+
+Linear and Non-linear classification: SVMs can be used for both linear and non-linear classification tasks. For linear classification, the decision boundary is a hyperplane. For non-linear classification, the decision boundary is created by transforming the data into a higher-dimensional space where it becomes linearly separable.
+
+Maximal Margin Classifier: The decision boundary that maximizes the margin, which is the distance between the closest data points of different classes, is chosen as the optimal boundary.
+
+Support Vectors: The data points that are closest to the decision boundary are called support vectors. These are the data points that have the most influence on the position of the boundary.
+
+Regularization: SVMs use a regularization parameter, called C, to control the trade-off between maximizing the margin and minimizing the classification error.
+
+Kernel Trick: The kernel trick is a technique used to transform non-linearly separable data into a higher-dimensional space where it becomes linearly separable. This can be done by using different types of kernel functions, such as the polynomial kernel, radial basis function kernel, and sigmoid kernel.
+
+Versatility: SVMs can be used for various type of classification problem, like text classification, image classification, speech recognition, and bioinformatics.
+
+Robustness: SVMs are relatively robust to noise and outliers, as the decision boundary is based on the support vectors, which are the data points closest to the boundary.
+
+Sparse Solution: SVMs tend to find a sparse solution, which means that only a subset of the training data points are used as support vectors. This makes SVMs memory efficient and fast to train.
+
+It's important to note that while SVMs are powerful and versatile models, they can be sensitive to the choice of kernel function, and the choice of the regularization parameter. However, some libraries like scikit-learn have grid search algorithm to help finding the best parameters.
+
+
+#### Issues in SVM
+
+Support Vector Machines (SVMs) are a popular supervised learning algorithm for classification and regression problems. However, there are a few issues that can arise when using SVMs. Here are some of them:
+
+The choice of kernel: The kernel is a function that maps the input data into a higher-dimensional space, where it is easier to find a linear boundary. Choosing an appropriate kernel can be challenging, as different kernels may perform better or worse depending on the specific problem.
+
+Overfitting: SVMs are prone to overfitting when the number of features is larger than the number of samples. To avoid overfitting, regularization techniques such as the use of soft margins or the addition of a penalty term to the cost function can be used.
+
+Computational complexity: SVMs are computationally expensive, especially when the number of samples is large. This can make training and testing SVMs impractical for large datasets.
+
+High-dimensional problems: When the dimensionality of the problem is high, the number of samples required to achieve good generalization can be prohibitively large. This can make SVMs less effective for high-dimensional problems.
+
+Non-linearly separable problems: SVMs are designed to find linear decision boundaries, and may perform poorly on non-linearly separable problems. To address this, kernel trick can be used to map the data into a higher dimensional space in which a linear boundary can be found.
+
+Handling multi-class problems: SVMs are primarily designed for binary classification problems. To handle multi-class problems, various techniques such as one-vs-all or one-vs-one can be used.
+
+Lack of probabilistic output: SVMs do not provide probabilistic output, which makes it difficult to estimate the uncertainty of the predictions.
+
+Handling missing data: SVMs cannot handle missing data. This can be a problem when working with datasets that have missing values.
+
+To overcome these issues, it is important to carefully tune the parameters of the SVM, and to consider other algorithms such as neural networks, decision trees, and random forests that may be more appropriate for the problem at hand.
+
+## unit 3
+
+
+### Decision Tree Learning
 
 
 
-<!--
+<!--v
 
 
 
-##### Issues in SVM
-
-##### Decision Tree Learning
 
 ##### Decision tree learning algorithm
 
