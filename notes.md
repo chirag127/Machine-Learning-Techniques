@@ -1165,11 +1165,24 @@ The decision tree algorithm has several advantages, such as ease of interpretati
 
 
 
+
+#### Inductive bias
+
+
+Inductive bias refers to the assumptions and preconceptions that a machine learning algorithm has about the data it is processing. These biases can affect the algorithm's ability to generalize from the training data to new, unseen data.
+
+Inductive bias can be divided into two main types: positive and negative. Positive inductive bias refers to the assumption that the data follows a certain pattern or structure, which can help the algorithm learn more efficiently. For example, a decision tree algorithm has a positive inductive bias towards hierarchically organized data, as it allows the algorithm to make more efficient splits at each node.
+
+On the other hand, negative inductive bias refers to the assumption that the data does not follow a certain pattern or structure, which can lead to the algorithm missing important information. For example, a linear regression algorithm has a negative inductive bias towards non-linear data, as it assumes that the relationship between the input and output is linear, and may not be able to capture more complex relationships.
+
+It is important to note that while inductive bias can be limiting, it is also necessary for any machine learning algorithm to make predictions. Without any assumptions about the data, the algorithm would have to consider all possible hypotheses, making it computationally infeasible.
+
+The choice of algorithm and its corresponding inductive bias should be chosen based on the nature of the problem and the characteristics of the data. For example, decision tree algorithms are well suited for classification problems with hierarchically organized data, while linear regression algorithms are well suited for problems where the relationship between the input and output is roughly linear.
+
+Overall, Inductive bias is a fundamental aspect of machine learning and understanding it is important for selecting the appropriate algorithm for a given problem and tuning its parameters to achieve the best possible performance.
 <!--
 
 
-
-##### Inductive bias
 
 ##### Inductive inference with decision trees
 
