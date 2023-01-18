@@ -1180,13 +1180,78 @@ It is important to note that while inductive bias can be limiting, it is also ne
 The choice of algorithm and its corresponding inductive bias should be chosen based on the nature of the problem and the characteristics of the data. For example, decision tree algorithms are well suited for classification problems with hierarchically organized data, while linear regression algorithms are well suited for problems where the relationship between the input and output is roughly linear.
 
 Overall, Inductive bias is a fundamental aspect of machine learning and understanding it is important for selecting the appropriate algorithm for a given problem and tuning its parameters to achieve the best possible performance.
-<!--
+
+
+here are a few examples of inductive bias in machine learning:
+
+Decision Trees: Decision tree algorithms have a positive inductive bias towards hierarchically organized data. This means that they make efficient splits at each node based on the features of the data, allowing them to quickly classify new data points.
+
+Linear Regression: Linear regression algorithms have a negative inductive bias towards non-linear data. This means that they assume that the relationship between the input and output is linear, and may not be able to capture more complex relationships. For example, if we were trying to model the relationship between temperature and ice cream sales, a linear regression algorithm would only consider linear relationships such as a straight line, and not take into account non-linear relationships such as a parabolic shape.
+
+Neural Networks: Neural networks have a positive inductive bias towards discovering complex patterns in data. They are able to learn multiple layers of representations, which can help them to find complex relationships between the input and output. However, as they have a lot of parameters, they can be prone to overfitting.
+
+Naive Bayes: Naive Bayes algorithm have a strong independence assumption, that is, it assumes that all the features of a dataset are independent of each other. This can be a strong assumption for certain datasets, for example, in a dataset with medical records, it will assume that symptoms are independent of the disease, which is not always the case.
+
+k-Nearest Neighbors: k-Nearest Neighbors algorithm has a positive inductive bias towards smooth decision boundaries. This means it will tend to classify new data points based on the majority class of the k nearest training examples. However, this assumption may not be valid for certain types of data, such as data with multiple clusters or non-uniform class distributions.
+
+It is important to note that all machine learning algorithms have some form of inductive bias, and the choice of algorithm and its corresponding bias should be chosen based on the nature of the problem and the characteristics of the data.
+
 
 
 
 ##### Inductive inference with decision trees
 
-##### Entropy and information theory
+Inductive inference is the process of using observations to infer general rules or principles. In the context of decision trees, inductive inference is used to construct a decision tree from a set of training data. The process begins by selecting a feature or attribute from the training data and using it as the root node of the tree. The tree is then grown by recursively partitioning the data into subsets based on the values of the selected feature, and creating child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
+
+
+
+Decision trees are a popular method for classification and regression tasks in machine learning. They are a type of predictive model that can be used to map input data (also known as features or attributes) to a target output (such as a class label or a numeric value).
+
+In the case of inductive decision tree learning, the process of constructing a decision tree starts with selecting a feature from the training data as the root node, which is the topmost node of the tree. This feature is chosen based on its ability to best separate or discriminate the target output.
+
+Next, the tree is grown by partitioning the data into subsets based on the values of the selected feature at the root node. Each unique value of the feature corresponds to a child node. This process is repeated for each child node by selecting the next feature that best separates the data at that node. This continues until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples at a leaf node.
+
+As the tree grows, it forms a series of internal nodes and leaf nodes. Internal nodes represent a decision point, where the tree splits the data based on the value of a feature, while leaf nodes represent the final outcome or prediction of the tree. To classify new data, we traverse the tree from the root node to a leaf node by following the path determined by the values of the features at each internal node. The class label or numeric value associated with that leaf node is the prediction made by the tree.
+
+It's worth noting that decision trees are prone to overfitting if the tree is grown too deep. To overcome this problem, techniques such as pruning, which involves removing branches of the tree that do not add much value to the predictions, can be used to reduce the complexity of the tree.
+#### Entropy and information theory
+
+##### Entropy Theory
+
+Entropy is a measure of impurity or disorder in a set of data. In the context of decision trees, entropy is used to determine the best feature to split the data on at each step in the tree-building process.
+
+A decision tree is a flowchart-like tree structure, where an internal node represents feature(or attribute), the branch represents a decision rule, and each leaf node represents the outcome. The topmost node in a decision tree is known as the root node. It learns to partition the data into subsets based on the values of the input features.
+
+The entropy of a set S of examples is defined as -∑(p(i) log2 p(i)), where p(i) is the proportion of examples in class i. The entropy is 0 if all examples in S belong to the same class, and it is maximum if the examples in S are evenly split across all classes. In decision tree learning, the goal is to construct a tree that minimizes the entropy of the target class.
+
+At each step in building the tree, the algorithm selects the feature that results in the largest information gain, which is the difference in entropy before and after the split. The feature that results in the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
+
+In summary, entropy is a measure of impurity or disorder in a set of data and it is used to determine the best feature to split the data on at each step in the tree-building process. In decision tree learning, the goal is to construct a tree that minimizes the entropy of the target class.
+
+##### Information gain
+
+
+Information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
+
+In summary, information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
+
+##### ID-3 Algorithm
+
+
+ID3 is a popular algorithm for constructing decision trees. It is an iterative algorithm that constructs a decision tree by recursively partitioning the data into subsets based on the values of the input features. The algorithm begins by selecting the feature that best separates the target class, and uses it as the root node of the tree. It then partitions the data into subsets based on the values of the selected feature, and creates child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
+
+The ID3 algorithm is a greedy algorithm, meaning that it makes the best decision at each step without considering the future consequences of that decision. This can lead to overfitting, where the tree is grown too deep and does not generalize well to new data. To overcome this problem, techniques such as pruning, which involves removing branches of the tree that do not add much value to the predictions, can be used to reduce the complexity of the tree.
+
+In summary, ID3 is a popular algorithm for constructing decision trees. It is an iterative algorithm that constructs a decision tree by recursively partitioning the data into subsets based on the values of the input features. The algorithm begins by selecting the feature that best separates the target class, and uses it as the root node of the tree. It then partitions the data into subsets based on the values of the selected feature, and creates child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
+
+##### Issues in Decision tree learning
+
+
+
+<!--
+
+
+
 
 ##### Information gain
 
