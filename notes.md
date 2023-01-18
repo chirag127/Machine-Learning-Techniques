@@ -1228,6 +1228,45 @@ At each step in building the tree, the algorithm selects the feature that result
 
 In summary, entropy is a measure of impurity or disorder in a set of data and it is used to determine the best feature to split the data on at each step in the tree-building process. In decision tree learning, the goal is to construct a tree that minimizes the entropy of the target class.
 
+##### Information Theory
+
+Information theory is a branch of mathematics that deals with the study of the transmission, processing, and extraction of information. It was developed by Claude Shannon in the 1940s and is now widely used in fields such as communication engineering, computer science, and statistics.
+
+A decision tree is a graphical representation of a decision-making process. It is used to model a problem and to help find the best solution by breaking it down into smaller, more manageable decisions. Each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label.
+
+Information theory can be used in the construction of decision trees in several ways. One of the main applications is in the selection of the attribute to test at each internal node. This is typically done by using measures such as information gain or gain ratio, which are based on the concept of entropy, a key concept in information theory. Entropy measures the amount of uncertainty or randomness in a system. In the case of decision trees, it is used to measure the impurity of a set of examples, with a higher entropy indicating a higher level of impurity.
+
+Information gain and gain ratio are used to evaluate the potential of each attribute to reduce the impurity of the set of examples. The attribute with the highest gain or gain ratio is selected to be tested at the next internal node. This process is repeated recursively until the tree is fully grown.
+
+In summary, Information theory provides the mathematical foundation for decision tree learning algorithms by defining the concept of entropy as a measure of impurity, and information gain and gain ratio as measure of the potential of each attribute to reduce the impurity of the set of examples.
+
+##### Information gain and gain ratio
+
+Information gain and gain ratio are two measures of the potential of each attribute to reduce the impurity of the set of examples. The attribute with the highest information gain or gain ratio is selected to be tested at the next internal node. This process is repeated recursively until the tree is fully grown.
+
+Information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
+
+Gain ratio is similar to information gain, but it is normalized by the entropy of the attribute. This is done to avoid selecting attributes with a large number of possible values, which would result in a high information gain but a low gain ratio.
+
+In summary, information gain and gain ratio are two measures of the potential of each attribute to reduce the impurity of the set of examples. The attribute with the highest information gain or gain ratio is selected to be tested at the next internal node. This process is repeated recursively until the tree is fully grown.
+
+#### Decision tree learning algorithms
+
+Decision trees are a popular machine learning technique for both classification and regression problems. They are easy to understand and interpret, and can be used to build a predictive model in a few steps. The goal of decision tree learning is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
+
+##### Decision tree learning
+
+Decision tree learning is a supervised machine learning technique for both classification and regression problems. It is used to build a predictive model in a few steps. The goal of decision tree learning is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
+
+A decision tree is a flowchart-like tree structure, where an internal node represents feature(or attribute), the branch represents a decision rule, and each leaf node represents the outcome. The topmost node in a decision tree is known as the root node. It learns to partition the data into subsets based on the values of the input features.
+
+The entropy of a set S of examples is defined as -∑(p(i) log2 p(i)), where p(i) is the proportion of examples in class i. The entropy is 0 if all examples in S belong to the same class, and it is maximum if the examples in S are evenly split across all classes. In decision tree learning, the goal is to construct a tree that minimizes the entropy of the target class.
+
+At each step in building the tree, the algorithm selects the feature that results in the largest information gain, which is the difference in entropy before and after the split. The feature that results in the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
+
+In summary, decision tree learning is a supervised machine learning technique for both classification and regression problems. It is used to build a predictive model in a few steps. The goal of decision tree learning is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
+
+
 ##### Information gain
 
 
@@ -1236,6 +1275,16 @@ Information gain is the difference in entropy before and after a data set is spl
 In summary, information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
 
 ##### ID-3 Algorithm
+The ID3 algorithm starts with the original dataset and selects the attribute with the highest information gain as the root node of the decision tree. Information gain is a measure of the reduction in entropy (or impurity) achieved by partitioning the data based on a particular attribute. The attribute with the highest information gain is considered the most informative attribute, as it provides the most discriminatory power for differentiating between the classes.
+
+Once the root node is selected, the data is partitioned into subsets based on the value of the root attribute. The ID3 algorithm is then recursively applied to each subset to find the next best attribute for each partition. This process continues until a stopping condition is met, such as when all the data belongs to the same class or when there are no more attributes to split on.
+
+The ID3 algorithm is a simple and easy-to-understand algorithm for building decision trees. However, it has some limitations such as overfitting, bias towards attributes with more categories, and handling missing data.
+
+Pruning is one of the way to overcome overfitting issue, ID3 algorithm also can be improved with more advance algorithm such as C4.5 and C5.0 which handle some of its limitation.
+
+
+
 
 
 ID3 is a popular algorithm for constructing decision trees. It is an iterative algorithm that constructs a decision tree by recursively partitioning the data into subsets based on the values of the input features. The algorithm begins by selecting the feature that best separates the target class, and uses it as the root node of the tree. It then partitions the data into subsets based on the values of the selected feature, and creates child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
@@ -1246,20 +1295,50 @@ In summary, ID3 is a popular algorithm for constructing decision trees. It is an
 
 ##### Issues in Decision tree learning
 
+Overfitting: Decision trees can easily overfit the training data if the tree is grown too deep, leading to poor performance on unseen data.
+
+Instability: Small changes in the data can result in a completely different decision tree. This can make the model highly sensitive to minor fluctuations in the training data.
+
+Bias towards attributes with more levels: Decision trees are more likely to split on attributes with more levels or categories, leading to a bias towards those attributes.
+
+Limited use for continuous variables: Decision trees are not well-suited for handling continuous variables and require them to be discretized prior to building the tree.
+
+Unbalanced class problem: Decision tree learning can be biased towards the majority class, making it difficult to handle imbalanced datasets.
+
+Handling missing values: Decision tree algorithms may have difficulty handling missing values, and the results can be affected by how missing values are handled.
+
+Not good for linear relationships: Decision tree is not good for the case where the data has linear relationship.
+
+
+
+
+
+
+
+### Instance-Based Learning
+
+Instance-based learning, also known as memory-based learning, is a type of supervised learning that involves storing instances or examples of the training data in memory and using them as a basis for making predictions. The basic idea behind this approach is to find the most similar instances in the training data to a new input and use them to predict the output.
+
+The main advantage of instance-based learning is that it can handle non-linear and complex relationships between inputs and outputs, as it does not rely on a specific functional form or model structure. This makes it a good choice for problems where the underlying relationship is not well understood or where the data is noisy or non-linear.
+
+There are two main types of instance-based learning algorithms: nearest neighbor and kernel-based.
+
+Nearest neighbor: This algorithm finds the "k" closest instances in the training data to a new input and uses the output of these instances to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
+
+Kernel-based: This algorithm uses a kernel function to find the similarity between instances. The kernel function maps the inputs to a high-dimensional feature space where the similarity is calculated. Common kernel-based algorithms include the support vector machine (SVM) and radial basis function (RBF) network.
+
+Instance-based learning is also computationally efficient and requires very little storage space, as it only needs to store the training instances. However, it can be sensitive to the choice of distance metric and the value of k, and it can be affected by the presence of irrelevant or redundant features in the data.
+
+The main disadvantage of instance-based learning is that it can be slow when making predictions on a large dataset, as it requires searching through all the stored instances to find the most similar ones. Additionally, it is not suitable for online learning, as it requires retraining on the entire dataset whenever new instances are added.
+
+
+
+
 
 
 <!--
 
 
-
-
-##### Information gain
-
-##### ID-3 Algorithm
-
-##### Issues in Decision tree learning
-
-##### Instance-Based Learning
 
 ##### k-Nearest Neighbour Learning
 
