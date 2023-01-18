@@ -1335,14 +1335,21 @@ The main disadvantage of instance-based learning is that it can be slow when mak
 
 
 
-
-<!--
-
-
-
 ##### k-Nearest Neighbour Learning
 
+k-Nearest Neighbour Learning is a type of instance-based learning algorithm that uses a distance metric to find the k closest instances in the training data to a new input and uses their outputs to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
+
+The k-NN algorithm is a simple and easy-to-understand algorithm that can be used for both classification and regression problems. It is a non-parametric algorithm, meaning that it does not make any assumptions about the underlying data distribution. This makes it a good choice for problems where the underlying relationship is not well understood or where the data is noisy or non-linear.
+
+The k-NN algorithm is also computationally efficient and requires very little storage space, as it only needs to store the training instances. However, it can be slow when making predictions on a large dataset, as it requires searching through all the stored instances to find the most similar ones. Additionally, it is not suitable for online learning, as it requires retraining on the entire dataset whenever new instances are added.
+
+The k-NN algorithm is a type of instance-based learning algorithm that uses a distance metric to find the k closest instances in the training data to a new input and uses their outputs to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
+
+
+
 ##### Locally Weighted Regression
+
+
 
 ##### Radial basis function networks
 
