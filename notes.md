@@ -464,7 +464,6 @@ Customer Segmentation: It is used in market research to segment the customers ba
 In Biology: It is used in the biology stream to classify different species of plants and animals using the image recognition technique.
 In Land Use: The clustering technique is used in identifying the area of similar lands use in the GIS database. This can be very useful to find that for what purpose the particular land should be used, that means for which purpose it is more suitable.
 
-
 #### Reinforcement Learning
 
 Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
@@ -472,7 +471,6 @@ Reinforcement learning (RL) is an area of machine learning concerned with how in
 Reinforcement learning differs from supervised learning in not needing labelled input/output pairs to be presented, and in not needing sub-optimal actions to be explicitly corrected. Instead the focus is on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).
 
 The environment is typically stated in the form of a Markov decision process (MDP), because many reinforcement learning algorithms for this context use dynamic programming techniques. The main difference between the classical dynamic programming methods and reinforcement learning algorithms is that the latter do not assume knowledge of an exact mathematical model of the MDP and they target large MDPs where exact methods become infeasible.
-
 
 ##### Decision Tree Learning
 
@@ -495,7 +493,6 @@ The decision tree learning algorithm is a supervised learning algorithm that can
 - Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the model.
 - Performs well even if its assumptions are somewhat violated by the true model from which the data were generated.
 
-
 ###### Decision tree learning disadvantages
 
 - Decision-tree learners can create over-complex trees that do not generalise the data well. This is called overfitting. Mechanisms such as pruning (not currently supported), setting the minimum number of samples required at a leaf node or setting the maximum depth of the tree are necessary to avoid this problem.
@@ -503,20 +500,16 @@ The decision tree learning algorithm is a supervised learning algorithm that can
 - There are concepts that are hard to learn because decision trees do not express them easily, such as XOR, parity or multiplexer problems.
 - Decision tree learners create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to fitting with the decision tree.
 - Decision trees can be unstable because small variations in the data might result in a completely different tree being generated. This problem is mitigated by using decision trees within an ensemble.
+
 ###### Decision tree learning applications
 
 - Decision trees are used in data mining for the purpose of classification and regression. They are one of the most popular tools and are used in a wide variety of applications, including medicine, manufacturing, and finance.
-
 
 ###### Bayesian networks
 
 - Bayesian networks are a type of probabilistic graphical model that represent a set of variables and their conditional dependencies via a directed acyclic graph (DAG). Bayesian networks are a type of probabilistic graphical model that represent a set of variables and their conditional dependencies via a directed acyclic graph (DAG). Bayesian networks are a type of probabilistic graphical model that represent a set of variables and their conditional dependencies via a directed acyclic graph (DAG). Bayesian networks are a type of probabilistic graphical model that represent a set of variables and their conditional dependencies via a directed acyclic graph (DAG).
 
-
-
-
 ##### Support Vector Machine
-
 
 Support vector machines (SVMs, also support vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. SVMs are a set of related supervised learning methods used for classification, regression and outliers detection. SVMs are a set of related supervised learning methods used for classification, regression and outliers detection. SVMs are a set of related supervised learning methods used for classification, regression and outliers detection. SVMs are a set of related supervised learning methods used for classification, regression and outliers detection.
 
@@ -572,8 +565,8 @@ Support vector machines (SVMs, also support vector networks) are supervised lear
 
 - The kernel cache size is given by the cache_size parameter. The kernel cache stores the results of the kernel evaluations for the samples.
 
-
 ##### Genetic Algorithm
+
 Genetic Algorithm (GA) is a search heuristic that is inspired by the process of natural selection. It is a optimization technique used to find the best solution to a problem by mimicking the process of natural selection. Here are some notes on Genetic Algorithm with reference to Machine Learning Techniques:
 
 Definition: A Genetic Algorithm is a search heuristic that is inspired by the process of natural selection. It is used to find the best solution to a problem by mimicking the process of natural selection. Genetic Algorithm starts with a population of solutions called chromosomes, and through the process of selection, crossover, and mutation, it evolves the population to find the best solution.
@@ -599,8 +592,6 @@ A problem of finding the shortest path between two cities can be solved using ge
 A problem of finding the global minimum of a function can be solved using genetic algorithm.
 In conclusion, Genetic Algorithm is a powerful optimization technique that is inspired by the process of natural selection. It can be used to find the best solution to a problem by mimicking the process of natural selection. The flexibility of GA makes it a popular choice among the researchers and practitioners for solving various optimization problems.
 
-
-
 ##### Issues in Machine Learning
 
 - Overfitting - The model fits the training data too well. It is not able to generalize well to new data.
@@ -616,7 +607,7 @@ In conclusion, Genetic Algorithm is a powerful optimization technique that is in
 - Outliers - The data contains outliers. It is not able to generalize well to new data.
 - Imbalanced classes - The classes are imbalanced. It is not able to generalize well to new data.
 - Missing values - The data contains missing values. It is not able to generalize well to new data.
-In Machine Learning, there are several issues that can arise during the process of building and deploying models. These issues can impact the performance of the model and the overall success of the machine learning project. Here are some notes on issues in Machine Learning:
+  In Machine Learning, there are several issues that can arise during the process of building and deploying models. These issues can impact the performance of the model and the overall success of the machine learning project. Here are some notes on issues in Machine Learning:
 
 Overfitting: Overfitting occurs when a model is trained too well on the training data and performs poorly on new, unseen data. This happens when the model is too complex and is able to memorize the training data instead of learning the underlying patterns. Overfitting can be addressed by using techniques such as regularization, early stopping, and ensembling.
 
@@ -631,8 +622,6 @@ Bias: Bias refers to the difference between the model's predictions and the true
 Privacy and Security: Machine Learning models may process sensitive data, which can lead to privacy and security issues. For example, a model that is trained on medical data can be used to discriminate against certain groups of people. This can be addressed by using techniques such as differential privacy, homomorphic encryption and federated learning.
 
 In conclusion, issues in Machine Learning can impact the performance of the model and the overall success of the project. It's important to be aware of these issues and to have strategies in place to address them.
-
-
 
 ##### Data Science vs Machine Learning
 
@@ -656,15 +645,12 @@ Real-world Scenario: In real-world scenarios, a well-defined learning problem is
 
 In conclusion, a well-defined learning problem is essential for the successful implementation of machine learning models. It allows for the clear specification of inputs, outputs, and desired behavior, which in turn enables the selection of appropriate algorithms and the evaluation of model performance.
 
-
-
-
 ## Unit 2
 
 ### Regression
 
-
 ##### Linear Regression
+
 Linear regression is one of the easiest and most popular Machine Learning algorithms. It is a statistical method that is used for predictive analysis. Linear regression makes predictions for continuous/real or numeric variables such as sales, salary, age, product price, etc.
 
 Linear regression algorithm shows a linear relationship between a dependent (y) and one or more independent (y) variables, hence called as linear regression. Since linear regression shows the linear relationship, which means it finds how the value of the dependent variable is changing according to the value of the independent variable.
@@ -753,8 +739,8 @@ It can be checked using the q-q plot. If the plot shows a straight line without 
 No autocorrelations:
 The linear regression model assumes no autocorrelation in error terms. If there will be any correlation in the error term, then it will drastically reduce the accuracy of the model. Autocorrelation usually occurs if there is a dependency between residual errors.
 
-
 ##### Logistic Regression
+
 Logistic Regression is a supervised learning algorithm used for classification problems. It is a statistical method that is used to model the relationship between a set of independent variables and a binary dependent variable. Here are some notes on Logistic Regression:
 
 Definition: Logistic Regression is a statistical method that is used to model the relationship between a set of independent variables and a binary dependent variable. The goal is to find the best set of parameters that maximizes the likelihood of the observed data.
@@ -775,12 +761,11 @@ In conclusion, Logistic Regression is a widely used algorithm for classification
 
 ### Bayesian Learning
 
-
 Bayesian Learning is a statistical learning method based on Bayesian statistics and probability theory. It is used to update the beliefs about the state of the world based on new evidence. Here are some notes on Bayesian Learning:
 
 Definition: Bayesian Learning is a statistical learning method based on Bayesian statistics and probability theory. The goal is to update the beliefs about the state of the world based on new evidence.
 
-Bayes Theorem: Bayesian Learning is based on Bayes' theorem, which states that the probability of a hypothesis given some data (P(H|D)) is proportional to the probability of the data given the hypothesis (P(D|H)) multiplied by the prior probability of the hypothesis (P(H)). Bayes' theorem is often written as P(H|D) = P(D|H) * P(H) / P(D)
+Bayes Theorem: Bayesian Learning is based on Bayes' theorem, which states that the probability of a hypothesis given some data (P(H|D)) is proportional to the probability of the data given the hypothesis (P(D|H)) multiplied by the prior probability of the hypothesis (P(H)). Bayes' theorem is often written as P(H|D) = P(D|H) \* P(H) / P(D)
 
 Prior and Posterior: In Bayesian Learning, a prior probability distribution is specified for the model parameters, which encodes our prior knowledge or beliefs about the parameters. When new data is observed, the prior is updated to form a posterior probability distribution, which encodes our updated beliefs about the parameters given the data.
 
@@ -794,13 +779,12 @@ A Bayesian Learning model that is used to predict whether a patient has a certai
 A Bayesian Learning model that is used to estimate the parameters of a robot's sensor model, by updating the beliefs about the sensor model based on the robot's sensor readings.
 In conclusion, Bayesian Learning is a statistical learning method based on Bayesian statistics and probability theory. It is used to update the beliefs about the state of the world based on new evidence. It's powerful and flexible and can be used for a wide range of problems. However, it can be computationally expensive and requires a good understanding of probability theory to implement it correctly.
 
-
-
 #### Bayes theorem
+
 Bayes' theorem is a fundamental result in probability theory that relates the conditional probability of an event to the prior probability of the event and the likelihood of the event given some other information. Here are some notes on Bayes' theorem:
 
 Definition: Bayes' theorem states that the conditional probability of an event A given that another event B has occurred is proportional to the prior probability of event A and the likelihood of event B given event A. Mathematically, it can be written as:
-P(A|B) = (P(B|A) * P(A)) / P(B)
+P(A|B) = (P(B|A) \* P(A)) / P(B)
 
 Intuition: Bayes' theorem is useful for updating our beliefs about the probability of an event given new information. The prior probability is our initial belief before we see the new information, the likelihood is how likely the new information is given our prior belief, and the posterior probability is our updated belief after we see the new information.
 
@@ -809,16 +793,15 @@ Applications: Bayes' theorem has many applications in machine learning, specific
 Example:
 
 A weather forecaster states that there is a 30% chance of rain tomorrow, and you observe that it is cloudy today. According to Bayes' theorem, the probability of rain tomorrow given that it is cloudy today can be calculated as:
-P(Rain|Cloudy) = (P(Cloudy|Rain) * P(Rain)) / P(Cloudy)
+P(Rain|Cloudy) = (P(Cloudy|Rain) \* P(Rain)) / P(Cloudy)
 Here, P(Rain|Cloudy) is the posterior probability, P(Cloudy|Rain) is the likelihood, P(Rain) is the prior probability and P(Cloudy) is the normalizing constant.
 In conclusion, Bayes' theorem is a fundamental result in probability theory that relates the conditional probability of an event to the prior probability of the event and the likelihood of the event given some other information. It provides a way to update our beliefs about the probability of an event given new information and has many applications in machine learning, particularly in the field of Bayesian learning.
-
 
 Bayes theorem is a mathematical formula that describes the probability of an event, based on prior knowledge of conditions that might be related to the event. Here are some notes on Bayes theorem:
 
 Definition: Bayes theorem is a mathematical formula that describes the probability of an event, based on prior knowledge of conditions that might be related to the event. It is named after the Reverend Thomas Bayes, who published a paper on the theorem in 1763.
 
-Bayes Theorem: Bayes theorem states that the probability of an event (A) given some evidence (B) is proportional to the probability of the evidence (B) given the event (A) multiplied by the prior probability of the event (A). Bayes theorem is often written as P(A|B) = P(B|A) * P(A) / P(B)
+Bayes Theorem: Bayes theorem states that the probability of an event (A) given some evidence (B) is proportional to the probability of the evidence (B) given the event (A) multiplied by the prior probability of the event (A). Bayes theorem is often written as P(A|B) = P(B|A) \* P(A) / P(B)
 
 #### Concept learning
 
@@ -844,9 +827,6 @@ Limitations: Concept learning algorithms can be limited by the quality and repre
 
 In conclusion, Concept learning is a process of unsupervised learning where the goal is to identify the underlying structure or pattern in the data without any prior knowledge of the output. It is based on the process of inductive inference and several algorithms, such as decision trees, rule-based systems, and nearest-neighbor methods are used to implement it. It's used in several applications and has its own set of limitations and challenges.
 
-
-
-
 #### Bayes Optimal Classifier
 
 The Bayes Optimal Classifier (BOC) is a theoretical classifier that makes the best possible predictions based on the probability of the input data. It is a type of Bayesian classifier that is based on Bayes' theorem, which states that the probability of an event occurring is equal to the prior probability of the event multiplied by the likelihood of the event given certain observations. Here are some notes on the Bayes Optimal Classifier:
@@ -866,8 +846,8 @@ Limitations: The BOC is not practical to use in in real-world scenarios, as it r
 Real-world Scenario: In real-world scenarios, the BOC is not practical to use. For example, in the healthcare industry, a doctor may not have the knowledge of the true underlying probability distributions of a patient's medical history and test results to make the best possible predictions about their disease. However, the BOC can be used as a benchmark to evaluate the performance of other classifiers, such as logistic regression or decision trees.
 In conclusion, The Bayes Optimal Classifier (BOC) is a theoretical classifier that makes the best possible predictions based on the probability of the input data. It is based on Bayes' theorem, and it's considered the "gold standard" for classification tasks, but it's not practical to use in real-world scenarios as it requires knowledge of the true underlying probability distributions of the data, which is often not available, and it can be computationally expensive. It is mainly used as a theoretical benchmark for comparing the performance of other classifiers.
 
-
 #### Naive Bayes classifier
+
 Naive Bayes classifier is a probabilistic algorithm based on Bayes theorem for classification tasks. It is a simple and efficient algorithm that makes the naive assumption that all the features are independent from each other. Here are some notes on Naive Bayes classifier:
 
 Definition: Naive Bayes classifier is a probabilistic algorithm based on Bayes theorem for classification tasks. It makes the naive assumption that all the features are independent from each other and uses this assumption to calculate the probability of a class given the input features.
@@ -892,13 +872,7 @@ Limitations: The naive assumption of independence between features can lead to p
 
 In conclusion, Naive Bayes classifier is a simple and efficient algorithm for classification tasks that is based on Bayes theorem. It makes the naive assumption that all the features are independent from each other and uses this assumption to calculate the probability of a class given the input features. It's widely used in several applications, but its performance can be affected by certain factors such as the independence assumption and presence of irrelevant features.
 
-
-
-
-
-
 #### Bayesian belief networks
-
 
 Bayesian belief networks (BBN), also known as Bayesian networks or Belief networks, are probabilistic graphical models that represent the relationships between variables and their probability distributions. They are based on Bayes theorem and are used for reasoning under uncertainty. Here are some notes on Bayesian belief networks:
 
@@ -916,11 +890,6 @@ Limitations: Bayesian belief networks can be computationally expensive for large
 
 In conclusion, Bayesian belief networks (BBN) are probabilistic graphical models that are used for reasoning under uncertainty. They represent the relationships between variables and their probability distributions via a directed acyclic graph (DAG). They are based on Bayes theorem and can be used for inference and learning. They are widely used in several applications, but they can be computationally expensive for large datasets or complex models.
 
-
-
-
-
-
 #### EM algorithm
 
 The Expectation-Maximization (EM) algorithm is an iterative method used for finding maximum likelihood estimates of parameters in models where the data is incomplete or has missing values. It is a widely used technique for estimating parameters in latent variable models, including mixture models and hidden Markov models. Here are some notes on the EM algorithm:
@@ -937,11 +906,10 @@ Limitations: The EM algorithm can be sensitive to the initialization of the para
 
 In conclusion, the Expectation-Maximization (EM) algorithm is an iterative method used for finding maximum likelihood estimates of parameters in models where the data is incomplete or has missing values. It is widely used for estimating parameters in latent variable models and is particularly useful for models that have latent variables. It has its own set of limitations and challenges, and its performance can be affected by certain factors such as initialization of the parameters and computational complexity.
 
-
 ### Support Vector Machine
 
-
 #### Introduction
+
 Support Vector Machine (SVM) is a supervised learning algorithm used for classification and regression problems. It is a powerful algorithm that can model non-linear decision boundaries by using kernel functions. Here are some notes on Support Vector Machine:
 
 Definition: Support Vector Machine (SVM) is a supervised learning algorithm used for classification and regression problems. It is a powerful algorithm that can model non-linear decision boundaries by using kernel functions. The goal of the SVM algorithm is to find the best decision boundary, called the hyperplane, that separates the data into different classes.
@@ -960,8 +928,6 @@ Limitations: SVM can be sensitive to the choice of kernel function, and the mode
 
 In conclusion, Support Vector Machine (SVM) is a powerful algorithm for classification and regression problems that can model non-linear decision boundaries using kernel functions. It finds the best decision boundary, called the hyperplane, that separates the data into different classes by maximizing the margin. SVM is widely used in several applications but has certain limitations such as sensitivity to kernel function, computational intensity, and non-convergence in case of noisy data.
 
-
-
 #### Types of support vector kernel
 
 Support Vector Machine (SVM) is a supervised learning algorithm that can be used for both classification and regression tasks. One of the key features of SVM is the use of kernel functions, which map the input data into a higher dimensional space in order to find a hyperplane that separates the classes. Here are some notes on the types of support vector kernel:
@@ -978,9 +944,8 @@ String kernel: String kernel is a kernel that operates on the sequence of symbol
 
 In conclusion, the choice of kernel function is an important aspect of SVM algorithm and it can greatly affect the performance of the model. The linear kernel is the simplest and it is useful when the data is linearly separable. The polynomial and Gaussian kernels can be used when the data is not linearly separable and they are commonly used in SVM. The sigmoid kernel is less commonly used and it is generally used in cases where the data has a non-linear decision boundary. String kernel is used in specific applications like text classification and bioinformatics.
 
-
-
 ##### Linear kernel
+
 The linear kernel is a kernel function used in Support Vector Machine (SVM) that maps the input data into a linear space. It is the simplest kernel function and it is defined as the dot product between the input vectors. Here are some notes on the linear kernel:
 
 Definition: The linear kernel is a kernel function used in Support Vector Machine (SVM) that maps the input data into a linear space. It is defined as the dot product between the input vectors. It is the simplest kernel function used in SVM.
@@ -994,7 +959,6 @@ Limitations: The linear kernel has some limitations when applied to non-linearly
 Real-world Applications: The linear kernel is widely used in a variety of applications such as text classification, image classification, speech recognition and bioinformatics.
 
 In conclusion, the linear kernel is a kernel function used in SVM, it is defined as the dot product between the input vectors, and it is useful when the data is linearly separable, it has the advantage of being computationally efficient and it is widely used in a variety of applications, but it has limitations when applied to non-linearly separable data.
-
 
 ##### Polynomial kernel
 
@@ -1012,7 +976,6 @@ Applications: The polynomial kernel is widely used in a variety of applications,
 
 In conclusion, The polynomial kernel is a kernel function that maps the input data into a higher-dimensional polynomial space. It's useful when the data is not linearly separable and can help to find a non-linear decision boundary that separates the classes. The polynomial kernel has several parameters, such as degree of the polynomial, constant term and the coefficient term. It's important to choose a good value for the degree of the polynomial to avoid overfitting and also to use cross-validation to choose the best parameters. It's widely used in several applications.
 
-
 ##### Gaussian kernel
 
 The Gaussian kernel, also known as the radial basis function (RBF) kernel, is a kernel function used in Support Vector Machine (SVM) that maps the input data into an infinite-dimensional space. It is defined as the exponential of the negative squared Euclidean distance between the input vectors. Here are some notes on the Gaussian kernel:
@@ -1025,19 +988,7 @@ Computational Efficiency: The Gaussian kernel is computationally efficient. Comp
 
 Limitations: One of the main limitations of the Gaussian kernel is its sensitivity to the choice of the kernel's hyperparameter, which determines the width of the Gaussian. If the hyperparameter is set too high, the decision boundary will be too broad and the model will overfit, if it is set too low, the decision boundary will be too narrow and the model will underfit. This can make it difficult to find an optimal value for the hyperparameter. Additionally, Gaussian kernel is computationally expensive for high-dimensional data, as it requires a lot of memory to store the kernel matrix.
 
-
 Real-world Applications: The Gaussian kernel is widely used in a variety of applications such as text classification, image classification, speech recognition and bioinformatics
-
-
-
-
-
-
-
-
-
-
-
 
 #### Hyperplane
 
@@ -1059,9 +1010,7 @@ Real-world Applications: The hyperplane is widely used in a variety of applicati
 
 In conclusion, the hyperplane is a subspace that is one dimension lower than the original space, it is a linear subspace that separates the input space into two parts, and it is widely used in a variety of applications.
 
-
 #### Properties of SVM
-
 
 Support Vector Machines (SVMs) are a type of supervised learning algorithm that can be used for classification or regression tasks. Here are some of the key properties of SVMs:
 
@@ -1082,7 +1031,6 @@ Robustness: SVMs are relatively robust to noise and outliers, as the decision bo
 Sparse Solution: SVMs tend to find a sparse solution, which means that only a subset of the training data points are used as support vectors. This makes SVMs memory efficient and fast to train.
 
 It's important to note that while SVMs are powerful and versatile models, they can be sensitive to the choice of kernel function, and the choice of the regularization parameter. However, some libraries like scikit-learn have grid search algorithm to help finding the best parameters.
-
 
 #### Issues in SVM
 
@@ -1107,7 +1055,6 @@ Handling missing data: SVMs cannot handle missing data. This can be a problem wh
 To overcome these issues, it is important to carefully tune the parameters of the SVM, and to consider other algorithms such as neural networks, decision trees, and random forests that may be more appropriate for the problem at hand.
 
 ## unit 3
-
 
 ### Decision Tree Learning
 
@@ -1139,7 +1086,9 @@ They can easily overfit the training data, especially when the tree is deep.
 They can be sensitive to small changes in the training data.
 They can be biased towards features with many levels.
 To overcome these issues, various techniques such as pruning, bagging, and boosting can be used to improve the performance of decision trees.
+
 #### Decision tree learning algorithm
+
 Decision tree learning is a supervised machine learning algorithm that can be used for both classification and regression problems. It creates a model in the form of a tree structure, where each internal node represents a feature or attribute, each branch represents a decision or rule, and each leaf node represents the outcome or a class label.
 
 The basic algorithm for decision tree learning can be broken down into the following steps:
@@ -1162,12 +1111,7 @@ CART (Classification and Regression Trees) can be used for both classification a
 
 The decision tree algorithm has several advantages, such as ease of interpretation and handling both categorical and numerical features. However, it also has some disadvantages, such as overfitting, sensitivity to small changes in the data and bias towards features with many levels. To overcome these issues, various techniques such as pruning, bagging, and boosting can be used to improve the performance of decision trees.
 
-
-
-
-
 #### Inductive bias
-
 
 Inductive bias refers to the assumptions and preconceptions that a machine learning algorithm has about the data it is processing. These biases can affect the algorithm's ability to generalize from the training data to new, unseen data.
 
@@ -1180,7 +1124,6 @@ It is important to note that while inductive bias can be limiting, it is also ne
 The choice of algorithm and its corresponding inductive bias should be chosen based on the nature of the problem and the characteristics of the data. For example, decision tree algorithms are well suited for classification problems with hierarchically organized data, while linear regression algorithms are well suited for problems where the relationship between the input and output is roughly linear.
 
 Overall, Inductive bias is a fundamental aspect of machine learning and understanding it is important for selecting the appropriate algorithm for a given problem and tuning its parameters to achieve the best possible performance.
-
 
 here are a few examples of inductive bias in machine learning:
 
@@ -1196,14 +1139,9 @@ k-Nearest Neighbors: k-Nearest Neighbors algorithm has a positive inductive bias
 
 It is important to note that all machine learning algorithms have some form of inductive bias, and the choice of algorithm and its corresponding bias should be chosen based on the nature of the problem and the characteristics of the data.
 
-
-
-
 ##### Inductive inference with decision trees
 
 Inductive inference is the process of using observations to infer general rules or principles. In the context of decision trees, inductive inference is used to construct a decision tree from a set of training data. The process begins by selecting a feature or attribute from the training data and using it as the root node of the tree. The tree is then grown by recursively partitioning the data into subsets based on the values of the selected feature, and creating child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
-
-
 
 Decision trees are a popular method for classification and regression tasks in machine learning. They are a type of predictive model that can be used to map input data (also known as features or attributes) to a target output (such as a class label or a numeric value).
 
@@ -1214,6 +1152,7 @@ Next, the tree is grown by partitioning the data into subsets based on the value
 As the tree grows, it forms a series of internal nodes and leaf nodes. Internal nodes represent a decision point, where the tree splits the data based on the value of a feature, while leaf nodes represent the final outcome or prediction of the tree. To classify new data, we traverse the tree from the root node to a leaf node by following the path determined by the values of the features at each internal node. The class label or numeric value associated with that leaf node is the prediction made by the tree.
 
 It's worth noting that decision trees are prone to overfitting if the tree is grown too deep. To overcome this problem, techniques such as pruning, which involves removing branches of the tree that do not add much value to the predictions, can be used to reduce the complexity of the tree.
+
 #### Entropy and information theory
 
 ##### Entropy Theory
@@ -1266,15 +1205,14 @@ At each step in building the tree, the algorithm selects the feature that result
 
 In summary, decision tree learning is a supervised machine learning technique for both classification and regression problems. It is used to build a predictive model in a few steps. The goal of decision tree learning is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
 
-
 ##### Information gain
-
 
 Information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
 
 In summary, information gain is the difference in entropy before and after a data set is split on an attribute. The attribute with the highest information gain is chosen as the decision node. This process is repeated on each subset of the data recursively until a stopping criterion is met, such as a maximum tree depth or a minimum number of samples in a leaf node.
 
 ##### ID-3 Algorithm
+
 The ID3 algorithm starts with the original dataset and selects the attribute with the highest information gain as the root node of the decision tree. Information gain is a measure of the reduction in entropy (or impurity) achieved by partitioning the data based on a particular attribute. The attribute with the highest information gain is considered the most informative attribute, as it provides the most discriminatory power for differentiating between the classes.
 
 Once the root node is selected, the data is partitioned into subsets based on the value of the root attribute. The ID3 algorithm is then recursively applied to each subset to find the next best attribute for each partition. This process continues until a stopping condition is met, such as when all the data belongs to the same class or when there are no more attributes to split on.
@@ -1282,10 +1220,6 @@ Once the root node is selected, the data is partitioned into subsets based on th
 The ID3 algorithm is a simple and easy-to-understand algorithm for building decision trees. However, it has some limitations such as overfitting, bias towards attributes with more categories, and handling missing data.
 
 Pruning is one of the way to overcome overfitting issue, ID3 algorithm also can be improved with more advance algorithm such as C4.5 and C5.0 which handle some of its limitation.
-
-
-
-
 
 ID3 is a popular algorithm for constructing decision trees. It is an iterative algorithm that constructs a decision tree by recursively partitioning the data into subsets based on the values of the input features. The algorithm begins by selecting the feature that best separates the target class, and uses it as the root node of the tree. It then partitions the data into subsets based on the values of the selected feature, and creates child nodes for each unique value. This process is repeated for each child node, using a different feature at each level of the tree, until the tree is fully grown. The result is a decision tree that can be used to make predictions about new data by traversing the tree from the root to a leaf node, following the path determined by the values of the features at each level.
 
@@ -1309,12 +1243,6 @@ Handling missing values: Decision tree algorithms may have difficulty handling m
 
 Not good for linear relationships: Decision tree is not good for the case where the data has linear relationship.
 
-
-
-
-
-
-
 ### Instance-Based Learning
 
 Instance-based learning, also known as memory-based learning, is a type of supervised learning that involves storing instances or examples of the training data in memory and using them as a basis for making predictions. The basic idea behind this approach is to find the most similar instances in the training data to a new input and use them to predict the output.
@@ -1331,10 +1259,6 @@ Instance-based learning is also computationally efficient and requires very litt
 
 The main disadvantage of instance-based learning is that it can be slow when making predictions on a large dataset, as it requires searching through all the stored instances to find the most similar ones. Additionally, it is not suitable for online learning, as it requires retraining on the entire dataset whenever new instances are added.
 
-
-
-
-
 ##### k-Nearest Neighbour Learning
 
 k-Nearest Neighbour Learning is a type of instance-based learning algorithm that uses a distance metric to find the k closest instances in the training data to a new input and uses their outputs to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
@@ -1345,11 +1269,7 @@ The k-NN algorithm is also computationally efficient and requires very little st
 
 The k-NN algorithm is a type of instance-based learning algorithm that uses a distance metric to find the k closest instances in the training data to a new input and uses their outputs to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
 
-
-
 ##### Locally Weighted Regression
-
-
 
 ##### Radial basis function networks
 
