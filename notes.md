@@ -75,12 +75,11 @@
         - [ID-3 Algorithm](#id-3-algorithm)
         - [Issues in Decision tree learning](#issues-in-decision-tree-learning)
     - [Instance-Based Learning](#instance-based-learning)
-        - [k-Nearest Neighbour Learning (k-NN)](#k-nearest-neighbour-learning-k-nn)
-        - [Locally Weighted Regression](#locally-weighted-regression)
-          - [Explanation of Locally Weighted Regression like I'm 5 years old](#explanation-of-locally-weighted-regression-like-im-5-years-old)
-        - [Radial basis function networks](#radial-basis-function-networks)
-- [](#)
-        - [Case-based learning](#case-based-learning)
+      - [k-Nearest Neighbour Learning (k-NN)](#k-nearest-neighbour-learning-k-nn)
+      - [Locally Weighted Regression](#locally-weighted-regression)
+        - [Explanation of Locally Weighted Regression like I'm 5 years old](#explanation-of-locally-weighted-regression-like-im-5-years-old)
+      - [Radial basis function networks](#radial-basis-function-networks)
+- [](#) - [Case-based learning](#case-based-learning)
   - [Unit 4](#unit-4)
     - [Artificial Neural Networks](#artificial-neural-networks)
       - [Advantages and Disadvantages of Artificial Neural Networks](#advantages-and-disadvantages-of-artificial-neural-networks)
@@ -1420,6 +1419,7 @@ The k-NN algorithm is also computationally efficient and requires very little st
 The k-NN algorithm is a type of instance-based learning algorithm that uses a distance metric to find the k closest instances in the training data to a new input and uses their outputs to make a prediction. The most common form of this algorithm is the k-nearest neighbor (k-NN) algorithm, which finds the k closest instances to the new input and assigns the most common output among them as the prediction.
 
 ##### Locally Weighted Regression
+
 Locally Weighted Regression (LWR) is a technique used for non-parametric regression, which means that it does not make any assumptions about the functional form of the relationship between the input and output variables. The main idea behind LWR is to weight the data points in the vicinity of the input point of interest more heavily than the data points that are farther away. This weighting is done by assigning a weight to each data point based on its distance to the input point, with the weight decreasing as the distance increases.
 
 The most common way to assign these weights is to use a kernel function, such as a Gaussian function, which assigns higher weights to data points that are closer to the input point and lower weights to data points that are farther away. The kernel function is defined by a parameter called the bandwidth, which controls the width of the kernel and, therefore, the size of the region of influence around the input point.
@@ -1442,12 +1442,6 @@ In LWR, we have a lot of numbers, called data points, and we want to find out wh
 
 Once we've asked the most important data points, we use something called "linear regression" to figure out what the answer is for the input point. And that's how LWR works, it's like asking your friends for help but instead of people, we're asking numbers.
 
-
-
-
-
-
-
 ##### Radial basis function networks
 
 Radial basis function (RBF) networks are a type of neural network that are used for supervised learning tasks, such as classification and regression. They are based on the concept of radial basis functions, which are functions that have a radial symmetry around a central point. In RBF networks, these functions are used as the activation functions for the neurons in the network.
@@ -1462,8 +1456,8 @@ However, there are also some disadvantages of RBF networks. One of the main issu
 
 Overall, radial basis function networks are a powerful and versatile type of neural network that are well-suited for a wide range of supervised learning tasks. They are particularly useful for tasks where the underlying function is complex and non-linear, and they are relatively easy to train. However, they can also be difficult to train and may lead to overfitting if the number of hidden layer neurons is too large.
 
-
 ###### explanation of Radial basis function networks like I'm 5 years old
+
 Radial basis function networks are like a big brain that helps computers learn new things. Just like how our brain has different parts that do different things, RBF networks have different layers that do different things too.
 
 The first layer is called the input layer and it's where the computer gets all the information it needs to learn. Then it sends that information to the second layer, which is called the hidden layer. The hidden layer has special helpers called neurons, and each neuron has a special job. They each use something called a radial basis function to help make sense of the information they received.
@@ -1471,7 +1465,6 @@ The first layer is called the input layer and it's where the computer gets all t
 The last layer is called the output layer, it takes the information from the hidden layer and makes a final decision. The final decision is what the computer thinks the right answer is. It's like when you're trying to guess what's inside a present and you use different clues to make a guess.
 
 RBF networks are really good at learning new things, even if the thing they're learning is really hard to understand. But sometimes, if there are too many helpers in the hidden layer, the computer might get confused and make a mistake. That's why it's important to have just the right number of helpers.
-
 
 ##### Case-based learning
 
@@ -1486,8 +1479,6 @@ One of the key benefits of case-based learning is that it allows students to see
 Case-based learning is also a collaborative approach, where students work in groups to analyze and solve the case. This allows students to learn from each other and gain different perspectives on the problem. It also helps to develop teamwork and communication skills.
 
 In conclusion, case-based learning is an effective teaching method that utilizes real-life scenarios to teach students. It helps students to understand and retain information better, and develops critical thinking and problem-solving skills. Additionally, it is a collaborative approach that allows students to learn from each other and gain different perspectives.
-
-
 
 ###### explanation of Case-based learning like I'm 5 years old
 
