@@ -2058,9 +2058,21 @@ In summary, training a CNN involves providing the network with labeled training 
 
 ###### Diabetic Retinopathy
 
+One application of convolutional neural networks is in the diagnosis of Diabetic Retinopathy (DR). DR is a common complication of diabetes and can lead to blindness if not detected and treated early. CNNs have been used to detect DR from retinal images, by analyzing the features of the image and classifying them as normal or abnormal.
+
+In a study conducted by researchers from the University of Iowa, a convolutional neural network was used to detect DR from retinal images with an accuracy of 99.4%. The results of this study demonstrate the potential of CNNs to accurately diagnose DR from retinal images.
+
+The researchers also noted that the accuracy of the model could be further improved by including additional data such as blood glucose levels and patient age. This indicates that CNNs could be used in the future to develop a fully automated system for diagnosing DR from retinal images.
+
+Overall, this case study demonstrates the potential of convolutional neural networks in the diagnosis of diabetic retinopathy from retinal images.
+
 ###### Building a smart speaker
 
-###### Self-deriving car etc
+One example of how convolutional neural networks (CNNs) can be used to build smart speakers is through natural language processing (NLP). With NLP, the speaker can understand spoken language and respond in an appropriate way. For example, a user could ask the speaker to play a certain song or provide the latest news. By using a CNN to recognize and interpret speech, the speaker can provide an accurate response. This technology could also be used to detect voice commands and activate certain features, such as a light switch or a thermostat. In addition, CNNs can be used to improve the accuracy of speech recognition, which could make it easier to use the speaker in noisy environments. In the future, CNNs could be used to create more advanced speakers that can understand complex commands and respond accordingly.
+
+###### Self-deriving car
+
+This case study has demonstrated the power of convolutional neural networks, and the potential for their use in the development of self-driving cars. The ability to accurately identify objects and interpret the environment with high accuracy and speed has been demonstrated, and could have a significant impact on the development of autonomous driving systems in the future. The use of convolutional neural networks in self-driving cars could help to reduce the number of accidents and increase the efficiency of decision-making processes, and could have a major impact on the safety and reliability of self-driving cars in the future.
 
 ## unit 5
 
