@@ -78,7 +78,8 @@
         - [k-Nearest Neighbour Learning (k-NN)](#k-nearest-neighbour-learning-k-nn)
         - [Locally Weighted Regression](#locally-weighted-regression)
           - [Explanation of Locally Weighted Regression like I'm 5 years old](#explanation-of-locally-weighted-regression-like-im-5-years-old)
-        - [](#)
+        - [Radial basis function networks](#radial-basis-function-networks)
+- [](#)
         - [Case-based learning](#case-based-learning)
   - [Unit 4](#unit-4)
     - [Artificial Neural Networks](#artificial-neural-networks)
@@ -1447,9 +1448,50 @@ Once we've asked the most important data points, we use something called "linear
 
 
 
-##### 
+##### Radial basis function networks
+
+Radial basis function (RBF) networks are a type of neural network that are used for supervised learning tasks, such as classification and regression. They are based on the concept of radial basis functions, which are functions that have a radial symmetry around a central point. In RBF networks, these functions are used as the activation functions for the neurons in the network.
+
+RBF networks consist of two layers: an input layer and a hidden layer. The input layer receives the input data and passes it on to the hidden layer, which contains a set of neurons that are each associated with a radial basis function. Each neuron in the hidden layer computes the output of its associated radial basis function for the input data, and then passes this output to the output layer.
+
+The output layer of an RBF network is typically a linear layer, which combines the outputs of the hidden layer neurons to produce the final output of the network. The weights of the output layer are typically determined using a method called least squares, which minimizes the difference between the network's output and the target output.
+
+One of the main advantages of RBF networks is that they are able to approximate any continuous function, as long as the hidden layer contains enough neurons. This makes them well-suited for tasks where the underlying function is complex and non-linear. Additionally, RBF networks are relatively easy to train, as the weights of the output layer can be determined using simple linear algebra techniques.
+
+However, there are also some disadvantages of RBF networks. One of the main issues is that the number of neurons required in the hidden layer can be quite large, which can make the network difficult to train and may lead to overfitting. Additionally, the choice of radial basis functions can also be a limiting factor, as different types of functions may be better suited for different tasks.
+
+Overall, radial basis function networks are a powerful and versatile type of neural network that are well-suited for a wide range of supervised learning tasks. They are particularly useful for tasks where the underlying function is complex and non-linear, and they are relatively easy to train. However, they can also be difficult to train and may lead to overfitting if the number of hidden layer neurons is too large.
+
+
+###### explanation of Radial basis function networks like I'm 5 years old
+Radial basis function networks are like a big brain that helps computers learn new things. Just like how our brain has different parts that do different things, RBF networks have different layers that do different things too.
+
+The first layer is called the input layer and it's where the computer gets all the information it needs to learn. Then it sends that information to the second layer, which is called the hidden layer. The hidden layer has special helpers called neurons, and each neuron has a special job. They each use something called a radial basis function to help make sense of the information they received.
+
+The last layer is called the output layer, it takes the information from the hidden layer and makes a final decision. The final decision is what the computer thinks the right answer is. It's like when you're trying to guess what's inside a present and you use different clues to make a guess.
+
+RBF networks are really good at learning new things, even if the thing they're learning is really hard to understand. But sometimes, if there are too many helpers in the hidden layer, the computer might get confused and make a mistake. That's why it's important to have just the right number of helpers.
+
 
 ##### Case-based learning
+
+Case-based learning is a teaching method that utilizes real-life scenarios or case studies as a way to teach students. It is a problem-based learning approach that encourages students to think critically and apply their knowledge to real-world situations.
+
+The main idea behind case-based learning is that students can better understand and retain information when they are able to see how it is applied in real-life scenarios. This approach is particularly useful for subjects such as business, law, and medicine, where students must be able to apply their knowledge in practical situations.
+
+In a case-based learning environment, students are presented with a case study or scenario and are asked to analyze and solve the problem presented. They are encouraged to use their critical thinking skills and apply their knowledge to come up with a solution. The process of analyzing and solving the case helps students to better understand the subject matter and retain the information.
+
+One of the key benefits of case-based learning is that it allows students to see how their knowledge can be applied in the real world. This can help them to understand the relevance of the subject matter and make it more interesting to them. Additionally, it allows students to develop problem-solving skills and critical thinking skills, which are valuable in a wide range of careers.
+
+Case-based learning is also a collaborative approach, where students work in groups to analyze and solve the case. This allows students to learn from each other and gain different perspectives on the problem. It also helps to develop teamwork and communication skills.
+
+In conclusion, case-based learning is an effective teaching method that utilizes real-life scenarios to teach students. It helps students to understand and retain information better, and develops critical thinking and problem-solving skills. Additionally, it is a collaborative approach that allows students to learn from each other and gain different perspectives.
+
+
+
+###### explanation of Case-based learning like I'm 5 years old
+
+Case-based learning is when we learn by looking at real stories or problems that people have had. Imagine if you had a toy that was broken, and you had to figure out how to fix it. That's kind of like what we do in case-based learning. We look at a problem and try to figure out how to solve it. It's like playing detective and trying to find the answer. It's fun and helps us think better!
 
 ## Unit 4
 
