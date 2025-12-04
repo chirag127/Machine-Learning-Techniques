@@ -1,0 +1,102 @@
+# CI/CD Pipeline for ML Concept Visualizer Static Site Template
+# APEX ARCHITECTURE: Zero-Defect, High-Velocity Verification
+
+name: ML-Concept-Visualizer CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+# Define environment variables for consistency
+env:
+  REPO_NAME: ML-Concept-Visualizer-Static-Site-Template
+  NODE_VERSION: '20' # Using modern LTS for Vite/TS projects
+  BUILD_DIR: 'dist'
+
+jobs:
+  lint_and_format:
+    name: Lint & Format Check (Biome)
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⚙️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📥 Install Dependencies (Vite/TS)
+        run: npm ci
+
+      - name: 🧹 Run Linter & Formatter (Biome Check)
+        run: npx @biomejs/biome check --error-on-warnings ./src
+
+  unit_test:
+    name: Unit Tests (Vitest)
+    runs-on: ubuntu-latest
+    needs: [lint_and_format]
+    steps:
+      - name: ⚙️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📥 Install Dependencies
+        run: npm ci
+
+      - name: 🧪 Execute Vitest Unit Tests
+        run: npm test -- --coverage
+
+      - name: 📊 Upload Coverage Report (Codecov)
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # Assumes token is set for this repo
+          files: ./coverage/cobertura-coverage.xml
+          flags: unit
+
+  build_and_deploy:
+    name: Build & Deploy Static Site
+    runs-on: ubuntu-latest
+    needs: [unit_test]
+    if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request'
+    steps:
+      - name: ⚙️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📥 Install Dependencies
+        run: npm ci
+
+      - name: 🏗️ Build Static Site (Vite Production Build)
+        run: npm run build
+
+      - name: 🚀 Deploy to GitHub Pages (Using gh-pages branch)
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./${{ env.BUILD_DIR }}
+          force_orphan: true
+          cname: ml-concept-visualizer.chirag127.dev # Example custom domain placeholder
+          publish_branch: gh-pages
+
+      - name: 🛑 PR Check - Artifact Upload
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-build-output
+          path: ./${{ env.BUILD_DIR }}
+          retention-days: 5
