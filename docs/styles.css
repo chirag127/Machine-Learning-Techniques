@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header, main, footer {
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1, main h2, footer p {
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666666;
+}
